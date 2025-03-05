@@ -1,6 +1,12 @@
 'use strict';
 const contactFormEl = document.querySelector('.contact-form')
 console.log(contactFormEl);
+const validName = document.querySelector('.validname')
+console.log(validName);
+const validEName = document.querySelector('.validename')
+console.log(validEName);
+const validNName = document.querySelector('.validnname')
+console.log(validNName);
 const firstNameEL = document.querySelector('.name-first')
 console.log(firstNameEL);
 const lastNameEL = document.querySelector('.name-last')
@@ -44,6 +50,8 @@ btnSubmit.addEventListener('click', function (e) {
         validFNameEL.classList.remove('hidden')
         validFNameEL.classList.add('error')
         firstNameEL.classList.add('border-error')
+        validEName.classList.add('error')
+        validEName.classList.remove('hidden')
     } else if(firstnameRegEx.test(firstname)) {
         validFNameEL.classList.add('hidden')
     } else {
@@ -58,6 +66,8 @@ btnSubmit.addEventListener('click', function (e) {
         validLNameEL.classList.remove('hidden')
           validLNameEL.classList.add('error')
           lastNameEL.classList.add('border-error')
+         validNName.classList.add('error')
+            validNName.classList.remove('hidden')
     } else if(firstnameRegEx.test(lastname)) {
         validLNameEL.classList.add('hidden')
     } else {

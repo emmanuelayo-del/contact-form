@@ -108,6 +108,10 @@
      cursor: pointer;
  }
 
+ .valudname {
+     display: none;
+ }
+
  .submit:hover {
      background: hsl(187, 24%, 22%);
 

@@ -8,8 +8,12 @@
 
     .validfname,
     .validlname {
-        display: flex;
-        gap: 40px;
+        display: none;
 
+    }
+
+    .valudname {
+        display: flex;
+        gap: 7em;
     }
 }
