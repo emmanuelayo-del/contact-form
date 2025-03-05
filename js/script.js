@@ -40,8 +40,8 @@ console.log(successMessageEl);
 const btnSubmit = document.querySelector('.submit')
 console.log(btnSubmit);
 
-btnSubmit.addEventListener('click', function (e) {
-    e.preventDefault() // prevent the form from submitting immediately
+btnSubmit.addEventListener('click', function (event) {
+    event.preventDefault() // prevent the form from submitting immediately
    
     const firstname = firstNameEL.value; 
     const firstnameRegEx = /^[A-Za-z]+(?: [A-Za-z]+)*$/;

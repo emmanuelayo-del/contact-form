@@ -36,7 +36,10 @@
      gap: 7em;
  }
 
- input:focus {
+ input:focus,
+ .enquiry-first:focus,
+ .enquiry-second:focus,
+ textarea {
      outline: none;
      border: 1px solid hsl(169, 82%, 27%);
      box-shadow: 0 0 5px hsl(169, 82%, 27%);
