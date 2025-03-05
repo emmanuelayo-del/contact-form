@@ -1,0 +1,15 @@
+@media (min-width: 400px) {
+
+    .name,
+    .enquiry {
+        display: flex;
+        gap: 40px;
+    }
+
+    .validfname,
+    .validlname {
+        display: flex;
+        gap: 40px;
+
+    }
+}

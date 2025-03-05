@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/queries.css" />
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+
+<body>
+
+  <main id="wrapper">
+    <h2 class="heading">Contact Us</h2>
+    <div class="container">
+      <form class="contact-form">
+        <div class="name">
+          <div class="firstname"> <label for="name" class="first-name font-size">First Name <br /><input type="name"
+                class="name-first" /></label></div>
+          <div class="validfname hidden">This field is required
+          </div>
+          <div class="lastname">
+            <label for="name" class="last-name font-size">Last Name<br /><input type="name" class="name-last" /></label>
+          </div>
+          <div class="validlname hidden">This field is required</div>
+        </div>
+
+    </div>
+    <label for="email" class="email--field font-size">Email Address<br /><input type="email"
+        class="email--input" /></label><br />
+    <div class="valid-email hidden">Please enter a valid email address</div>
+    <label for="query" class="font-size"> Query Type</label>
+    <div class="enquiry">
+      <div class="enquiry-first"><br /><input type="radio" class="query-side" placeholder="" />
+        <div class="enquiry-1 ">General Enquiry</div>
+      </div><br />
+
+      <div class="enquiry-second"><input type="radio" class="query-side" placeholder="" />
+        <div class="enquiry-2">Support Request</div>
+      </div>
+
+    </div>
+    <div class="query-valid">
+      <div class="valid-query hidden">Please select a query type</div>
+      <div class="valid-query hidden">Please select a query type</div>
+    </div>
+    <label for="Message" class="message-area font-size">Message<br /><textarea
+        class="message-field"></textarea></label><br />
+    <div class="valid-message hidden">This field is required</div>
+    <input type="radio" class="consent" /><span class="font-size">I consent to being contacted by the
+      team</span>.<br />
+    <div class="valid-consent hidden">To submit this form, please consent to being contacted</div>
+    <button class="submit">Submit</button>
+    </form>
+
+    <div class="success-message hidden">
+      <div class="message-w">
+        <img src="/assets/images/icon-success-check.svg" alt="icon-success-check" />
+        <p class="message">Message Sent!</p>
+      </div>
+      <p class="message-word">Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+<script defer src="/js/script.js"></script>
+
+</html>
