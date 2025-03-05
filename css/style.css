@@ -36,6 +36,12 @@
      gap: 7em;
  }
 
+ input:focus {
+     outline: none;
+     border: 1px solid hsl(169, 82%, 27%);
+     box-shadow: 0 0 5px hsl(169, 82%, 27%);
+ }
+
  .first-Name,
  .last-Name,
  .email--Field {
