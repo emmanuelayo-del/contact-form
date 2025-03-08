@@ -19,12 +19,20 @@
 
  .name-first,
  .name-last,
- .email--input,
  .enquiry-first,
  .enquiry-second {
      display: flex;
      border: 1px solid #777;
-     width: 100%;
+     width: 90%;
+     padding: .8em;
+     border-radius: .5em;
+     margin-bottom: .8em;
+     margin-top: .6em;
+ }
+
+ .email--input {
+     border: 1px solid #777;
+     width: 95%;
      padding: .8em;
      border-radius: .5em;
      margin-bottom: .8em;
@@ -37,12 +45,16 @@
  }
 
  input:focus,
+ input:hover,
  .enquiry-first:focus,
+ .enquiry-first:hover,
  .enquiry-second:focus,
+ .enquiry-second:hover,
  textarea {
      outline: none;
      border: 1px solid hsl(169, 82%, 27%);
      box-shadow: 0 0 5px hsl(169, 82%, 27%);
+     cursor: pointer;
  }
 
  .first-Name,
