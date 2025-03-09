@@ -52,6 +52,7 @@ btnSubmit.addEventListener('click', function (event) {
         firstNameEL.classList.add('border-error')
         validEName.classList.add('error')
         validEName.classList.remove('hidden')
+        successMessageEl.classList.add('hidden')
     } else if(firstnameRegEx.test(firstname)) {
         validFNameEL.classList.add('hidden')
     } else {
@@ -120,9 +121,10 @@ btnSubmit.addEventListener('click', function (event) {
 
     if(firstname && lastname && email && query && message && consent ) {
         successMessageEl.classList.remove('hidden')
-        contactFormEl.classList.add('hidden')
+        
+        
     } else {
-        successMessageEl.classList.add('hidden')
-        contactFormEl.classList.remove('hidden')
+        successMessageEl.classList.remove('hidden')
+        
     }
 })
