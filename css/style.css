@@ -101,12 +101,12 @@
  }
 
  .success-message {
-     padding: 1em;
+     padding: .5em;
      background: hsl(187, 24%, 22%);
      border-radius: .6em;
      position: absolute;
-     top: 0;
-     left: 28xem;
+     top: -50px;
+     left: 32em;
  }
 
  .message-w {
@@ -117,12 +117,14 @@
 
  .message {
      color: #fff;
-     margin-top: .6em;
+     margin-top: .4em;
      width: 100%;
+     font-size: .8em;
  }
 
  .message-word {
      color: hsl(148, 38%, 91%);
+     font-size: .7em;
  }
 
  .submit {

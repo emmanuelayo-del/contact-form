@@ -19,6 +19,7 @@ const emailEl = document.querySelector('.email--input')
 console.log(emailEl);
 const validEmailEl = document.querySelector('.valid-email')
 console.log(validEmailEl);
+const queryIsSelected = document.querySelector('input[name="query-check"]:checked')
 const querySideEl = document.querySelector('.query-side')
 console.log(querySideEl);
 const firstEnqiryEl = document.querySelector('.enquiry-first')
@@ -52,13 +53,14 @@ btnSubmit.addEventListener('click', function (event) {
         firstNameEL.classList.add('border-error')
         validEName.classList.add('error')
         validEName.classList.remove('hidden')
-        successMessageEl.classList.add('hidden')
+      
     } else if(firstnameRegEx.test(firstname)) {
         validFNameEL.classList.add('hidden')
     } else {
         validFNameEL.classList.remove('hidden')
         validFNameEL.classList.add('error')
          firstNameEL.classList.add('border-error')
+           
     }
 
     const lastname = lastNameEL.value; 
@@ -69,12 +71,14 @@ btnSubmit.addEventListener('click', function (event) {
           lastNameEL.classList.add('border-error')
          validNName.classList.add('error')
             validNName.classList.remove('hidden')
+               
     } else if(firstnameRegEx.test(lastname)) {
         validLNameEL.classList.add('hidden')
     } else {
         validLNameEL.classList.remove('hidden')
         validLNameEL.classList.add('error')
          lastNameEL.classList.add('border-error')
+         
     }
 
     const email = emailEl.value;
@@ -83,23 +87,32 @@ btnSubmit.addEventListener('click', function (event) {
         validEmailEl.classList.remove('hidden')
          validEmailEl.classList.add('error')
          emailEl.classList.add('border-error')
+        
     } else if(emailRegEx.test(email)) {
         validEmailEl.classList.add('hidden')
     } else {
         validEmailEl.classList.remove('hidden')
         validEmailEl.classList.add('error')
            emailEl.classList.add('border-error')
+              
     }
+
+    // if (!queryIsSelected) {
+    //     validQueryEl.classList.remove('hidden')
+    //     validQueryEl.classList.add('error')
+    // }
 
     const query = querySideEl.checked;
     if(!query) {
         validQueryEl.classList.remove('hidden')
           validQueryEl.classList.add('error')
           querySideEl.classList.add('border-error')
+           
     } else {
         validQueryEl.classList.add('hidden')
          validQueryEl.classList.add('error')
             querySideEl.classList.add('border-error')
+             
     }
 
     const message = messageField.value;
@@ -107,22 +120,29 @@ btnSubmit.addEventListener('click', function (event) {
         validMessageEl.classList.remove('hidden')
           validMessageEl.classList.add('error')
           messageField.classList.add('border-error')
+            
     } else {
         validMessageEl.classList.add('hidden')
+       
     }
 
     const consent = consentEl.checked;
     if(!consent) {
         validConsentEl.classList.remove('hidden')
           validConsentEl.classList.add('error')
+           
     } else {
         validConsentEl.classList.add('hidden')
+           
+    }
+
+
+    if(!firstname && !lastname && !email && !query && !message && !consent) {
+        successMessageEl.classList.replace('hidden')
     }
 
     if(firstname && lastname && email && query && message && consent ) {
         successMessageEl.classList.remove('hidden')
-        
-        
     } else {
         successMessageEl.classList.remove('hidden')
         
