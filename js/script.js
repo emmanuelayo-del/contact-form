@@ -1,46 +1,45 @@
 'use strict';
 const contactFormEl = document.querySelector('.contact-form')
-console.log(contactFormEl);
+
 const validName = document.querySelector('.validname')
-console.log(validName);
 const validEName = document.querySelector('.validename')
-console.log(validEName);
+
 const validNName = document.querySelector('.validnname')
-console.log(validNName);
+
 const firstNameEL = document.querySelector('.name-first')
-console.log(firstNameEL);
+
 const lastNameEL = document.querySelector('.name-last')
-console.log(lastNameEL);
+
 const validLNameEL = document.querySelector('.validlname')
-console.log(validLNameEL);
+
 const validFNameEL = document.querySelector('.validfname')
-console.log(validFNameEL);
+
 const emailEl = document.querySelector('.email--input')
-console.log(emailEl);
+
 const validEmailEl = document.querySelector('.valid-email')
-console.log(validEmailEl);
+
 const querySideEl = document.querySelector('.query-side')
-console.log(querySideEl);
+
 const querySideSecond = document.querySelector('.query-side-second')
-console.log(querySideSecond);
+
 const firstEnqiryEl = document.querySelector('.enquiry-first')
-console.log(firstEnqiryEl);
+
 const secondEnquiryEl = document.querySelector('.enquiry-second')
-console.log(secondEnquiryEl);
+
 const validQueryEl = document.querySelector('.valid-query')
-console.log(validQueryEl);
+
 const messageField = document.querySelector('.message-field')
-console.log(messageField);
+
 const validMessageEl = document.querySelector('.valid-message')
-console.log(validMessageEl);
+
 const consentEl = document.querySelector('.consent')
-console.log(consentEl);
+
 const validConsentEl = document.querySelector('.valid-consent')
-console.log(validConsentEl);
+
 const successMessageEl = document.querySelector('.success-message')
-console.log(successMessageEl);
+
 const btnSubmit = document.querySelector('.submit')
-console.log(btnSubmit);
+
 
 btnSubmit.addEventListener('click', function (event) {
     event.preventDefault() // prevent the form from submitting immediately
