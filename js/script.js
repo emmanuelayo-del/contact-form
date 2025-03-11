@@ -133,7 +133,7 @@ btnSubmit.addEventListener('click', function (event) {
     }
 
     if(!firstname && !lastname && !email && !query && !message && !consent) {
-        successMessageEl.classList.add('hidden')
+        successMessageEl.classList.replace('hidden')
     } else {
         successMessageEl.classList.remove('hidden')
     }
