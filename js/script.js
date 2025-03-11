@@ -136,12 +136,13 @@ btnSubmit.addEventListener('click', function (event) {
 
     if(!firstname && !lastname && !email && !query && !message && !consent) {
         successMessageEl.classList.replace('hidden')
+    } else {
+        successMessageEl.classList.remove('hidden')
     }
 
     if(firstname && lastname && email && query && message && consent ) {
         successMessageEl.classList.remove('hidden')
     } else {
-        successMessageEl.classList.remove('hidden')
-        
+        successMessageEl.classList.add('hidden')
     }
-})
+    })
