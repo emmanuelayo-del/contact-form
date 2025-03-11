@@ -19,9 +19,10 @@ const emailEl = document.querySelector('.email--input')
 console.log(emailEl);
 const validEmailEl = document.querySelector('.valid-email')
 console.log(validEmailEl);
-const queryIsSelected = document.querySelector('input[name="query-check"]:checked')
 const querySideEl = document.querySelector('.query-side')
 console.log(querySideEl);
+const querySideSecond = document.querySelector('.query-side-second')
+console.log(querySideSecond);
 const firstEnqiryEl = document.querySelector('.enquiry-first')
 console.log(firstEnqiryEl);
 const secondEnquiryEl = document.querySelector('.enquiry-second')
@@ -97,13 +98,9 @@ btnSubmit.addEventListener('click', function (event) {
               
     }
 
-    // if (!queryIsSelected) {
-    //     validQueryEl.classList.remove('hidden')
-    //     validQueryEl.classList.add('error')
-    // }
-
     const query = querySideEl.checked;
-    if(!query) {
+    const querySecond = querySideSecond.checked;
+    if(!query && !querySecond) {
         validQueryEl.classList.remove('hidden')
           validQueryEl.classList.add('error')
           querySideEl.classList.add('border-error')
