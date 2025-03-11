@@ -133,7 +133,7 @@ btnSubmit.addEventListener('click', function (event) {
     }
 
     if(!firstname && !lastname && !email && !query && !message && !consent) {
-        successMessageEl.classList.replace('hidden')
+        successMessageEl.classList.add('hidden')
     } else {
         successMessageEl.classList.remove('hidden')
     }
@@ -141,6 +141,6 @@ btnSubmit.addEventListener('click', function (event) {
     if(firstname && lastname && email && query && message && consent ) {
         successMessageEl.classList.remove('hidden')
     } else {
-        //  successMessageEl.classList.add('hidden')
+         successMessageEl.classList.add('hidden')
      }
     })
