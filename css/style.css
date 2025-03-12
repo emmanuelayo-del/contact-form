@@ -14,6 +14,15 @@
      src: url(/assets/fonts/static/Karla-Regular.ttf);
  }
 
+
+ #wrapper {
+     /* background: hsl(0, 0%, 100%); */
+     width: 400px;
+     margin: 4em auto;
+     padding: 1em;
+     border-radius: .7em;
+ }
+
  .font-size {
      font-size: .8em;
  }
@@ -105,8 +114,9 @@
      background: hsl(187, 24%, 22%);
      border-radius: .6em;
      position: absolute;
-     top: -50px;
-     left: 32em;
+     top: -55px;
+     left: 2.5em;
+     width: 300px;
  }
 
  .message-w {

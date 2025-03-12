@@ -41,8 +41,8 @@ const successMessageEl = document.querySelector('.success-message')
 const btnSubmit = document.querySelector('.submit')
 
 
-btnSubmit.addEventListener('click', function (event) {
-    event.preventDefault() // prevent the form from submitting immediately
+btnSubmit.addEventListener('click', function (e) {
+    e.preventDefault() // prevent the form from submitting immediately
    
     const firstname = firstNameEL.value; 
     const firstnameRegEx = /^[A-Za-z]+(?: [A-Za-z]+)*$/;
@@ -132,15 +132,6 @@ btnSubmit.addEventListener('click', function (event) {
            
     }
 
-    if(!firstname && !lastname && !email && !query && !message && !consent) {
-        successMessageEl.classList.replace('hidden')
-    } else {
-        successMessageEl.classList.remove('hidden')
-    }
-
-    if(firstname && lastname && email && query && message && consent ) {
-        successMessageEl.classList.remove('hidden')
-    } else {
-         successMessageEl.classList.add('hidden')
-     }
+    if(firstnameRegEx.test(firstname) && firstnameRegEx.test(lastname) && emailRegEx.test(email) && (query || querySecond) && message && consent) {
+        successMessageEl.classList.remove('hidden')}
     })
